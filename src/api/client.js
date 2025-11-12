@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:5000";
+const API_BASE = import.meta.env.VITE_API_BASE;
 
 export function buildQuery(params) {
   const q = new URLSearchParams();
@@ -9,6 +9,7 @@ export function buildQuery(params) {
 }
 
 export async function getCompanies(params) {
+  if (!API_BASE) throw new Error("API base URL is not defined!");
   const qs = buildQuery(params);
   const res = await fetch(`${API_BASE}/api/companies?${qs}`);
   if (!res.ok) throw new Error(`Failed to fetch: ${res.status}`);
