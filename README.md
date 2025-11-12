@@ -14,10 +14,10 @@ It allows users to explore, filter, and sort companies based on various paramete
 
 ## 📸 Screenshots
 
-> _(Add your screenshots here once ready — for example, home page, company cards, filters, etc.)_
-
-![Home Page](./screenshots/homepage.png)
-![Company List](./screenshots/company-list.png)
+<img width="1902" height="858" alt="image" src="https://github.com/user-attachments/assets/30b6eaf2-b36a-48c1-ab8e-71995c5f2a58" />
+<img width="1896" height="855" alt="image" src="https://github.com/user-attachments/assets/f6a2b720-290c-45d5-acae-8963a75375e9" />
+<img width="1892" height="804" alt="image" src="https://github.com/user-attachments/assets/a383cd54-845c-4598-9ed6-3c2ced39179d" />
+<img width="1892" height="851" alt="image" src="https://github.com/user-attachments/assets/b0052d94-fd1c-459e-9dde-17c015a74202" />
 
 ---
 
