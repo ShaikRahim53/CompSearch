@@ -7,20 +7,6 @@ function ensureUrl(href) {
     : `https://${href}`;
 }
 
-function formatCurrency(value) {
-  if (value == null || value === "") return "—";
-  const n =
-    typeof value === "number"
-      ? value
-      : Number(String(value).replace(/[^0-9.-]+/g, ""));
-  if (Number.isNaN(n)) return "—";
-  return new Intl.NumberFormat(undefined, {
-    style: "currency",
-    currency: "USD",
-    maximumFractionDigits: 0,
-  }).format(n);
-}
-
 export default function CompanyTable({ data }) {
   // accept either array or API wrapper
   const rows = Array.isArray(data) ? data : data?.data ?? [];
@@ -111,7 +97,7 @@ export default function CompanyTable({ data }) {
                 <td className="px-3 py-2 align-top border-b border-gray-100">
                   {revenue != null ? (
                     <span className="text-green-700 font-medium">
-                      {formatCurrency(revenue)}
+                      {revenue}
                     </span>
                   ) : (
                     "—"
